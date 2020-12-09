@@ -17,5 +17,12 @@
     <version>demo</version>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.noear.socketd.demo01.xcanal</groupId>
+            <artifactId>xcanal-base</artifactId>
+            <version>demo</version>
+        </dependency>
+    </dependencies>
 
 </project>
