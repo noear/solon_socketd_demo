@@ -29,6 +29,7 @@ public class ServerListener implements Listener {
                 Map<String, String> headers = HeaderUtil.decodeHeaderMap(message.header());
                 if ("1".equals(headers.get("token"))) {
                     //如果token是1，则设为成功握手
+                    System.out.println("签权成功");
                     session.setHandshaked(true);
                 } else {
                     session.close();
@@ -40,6 +41,7 @@ public class ServerListener implements Listener {
 
         //没有握手成功之前，不能做别的事；且自动断开链接
         if (session.getHandshaked() == false) {
+            System.out.println("这个客户端很坏，没签权就想发包:(");
             session.close();
         }
 
