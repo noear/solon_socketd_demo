@@ -18,6 +18,9 @@
         <module>demo01.send.auth/demo01.client.auth</module>
         <module>demo01.send.auth/demo01.server.auth</module>
 
+        <module>demo01.send.encrypt/demo01.client.encrypt</module>
+        <module>demo01.send.encrypt/demo01.server.encrypt</module>
+
         <module>demo02.session/demo02.client</module>
         <module>demo02.session/demo02.server</module>
 
