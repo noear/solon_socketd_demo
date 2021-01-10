@@ -10,18 +10,13 @@
         <version>1.2.19</version>
     </parent>
 
-    <artifactId>demo03.client</artifactId>
+    <artifactId>demo05.interface</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
     <description>Java project for socketd demo</description>
 
     <dependencies>
-        <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>solon.socketd.client.smartsocket</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nami</artifactId>

@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.socketd.smartsocket</artifactId>
+            <artifactId>solon.socketd.client.smartsocket</artifactId>
         </dependency>
 
         <dependency>

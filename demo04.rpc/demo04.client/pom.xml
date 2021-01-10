@@ -10,7 +10,7 @@
         <version>1.2.19</version>
     </parent>
 
-    <artifactId>demo03.client</artifactId>
+    <artifactId>demo04.client</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
@@ -19,12 +19,18 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.socketd.client.smartsocket</artifactId>
+            <artifactId>demo04.interface</artifactId>
+            <version>demo</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>nami</artifactId>
+            <artifactId>solon.boot.socketd.smartsocket</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>nami.coder.snack3</artifactId>
         </dependency>
     </dependencies>
 
