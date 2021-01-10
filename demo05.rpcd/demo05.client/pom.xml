@@ -23,6 +23,7 @@
             <version>demo</version>
         </dependency>
 
+        <!-- 作为 Rpc client端用 -->
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon.socketd.client.smartsocket</artifactId>
@@ -33,6 +34,7 @@
             <artifactId>nami.coder.snack3</artifactId>
         </dependency>
 
+        <!-- 作为 Rpc service端用(for server) -->
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon.serialization.snack3</artifactId>
