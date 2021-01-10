@@ -21,6 +21,17 @@ public class ServerListener implements Listener {
 
     @Override
     public void onMessage(Session session, Message message) throws IOException {
+        if (session.getHandshaked() == false) {
+            //消息是线程池分发的，确保鉴权时的消息顺序锁一下
+            synchronized (session) {
+                onMessage0(session, message);
+            }
+        } else {
+            onMessage0(session, message);
+        }
+    }
+
+    private void onMessage0(Session session, Message message) throws IOException {
         //如果是握手，则做鉴权处理
         if (message.flag() == MessageFlag.handshake) {
             if (Utils.isEmpty(message.header())) {
