@@ -21,8 +21,6 @@
         <module>demo03.subscribe/demo03.client</module>
         <module>demo03.subscribe/demo03.server</module>
 
-        <module>demo04.rpc</module>
-        <module>demo05.rpcd</module>
     </modules>
 
 </project>

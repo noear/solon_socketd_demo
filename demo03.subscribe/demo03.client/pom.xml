@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.noear</groupId>
         <artifactId>solon-parent</artifactId>
-        <version>1.2.18</version>
+        <version>1.2.19</version>
     </parent>
 
     <artifactId>demo03.client</artifactId>
@@ -16,8 +16,16 @@
 
     <description>Java project for socketd demo</description>
 
-    <modules>
-        
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon.boot.socketd.smartsocket</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>nami</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
