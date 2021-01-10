@@ -31,6 +31,10 @@
         <module>demo04.rpc/demo04.interface</module>
         <module>demo04.rpc/demo04.server</module>
 
+        <module>demo04.rpc.auth/demo04.client.auth</module>
+        <module>demo04.rpc.auth/demo04.interface.auth</module>
+        <module>demo04.rpc.auth/demo04.server.auth</module>
+
         <module>demo05.rpcd/demo05.client</module>
         <module>demo05.rpcd/demo05.interface</module>
         <module>demo05.rpcd/demo05.server</module>
