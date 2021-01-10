@@ -16,5 +16,9 @@ public class ClientApp {
         if (rpc.auth("1", "1")) {
             System.out.println("RPC result: " + rpc.hello("noear"));
         }
+
+        if (rpc.auth("1", "2")) {
+            System.out.println("RPC result: " + rpc.hello("noear"));
+        }
     }
 }
