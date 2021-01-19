@@ -20,8 +20,11 @@ public class ServerListener implements Listener {
         if(message.flag() == MessageFlag.heartbeat){
             System.out.println("服务端：我收到心跳");
         }else {
-            session.send("服务端：我收到：" + message.bodyAsString());
             System.out.println("服务端：我收到：" + message.bodyAsString());
+        }
+
+        for(Session s1 : session.getOpenSessions()){
+            s1.send("服务端：我收到：" + message.bodyAsString());
         }
     }
 }
