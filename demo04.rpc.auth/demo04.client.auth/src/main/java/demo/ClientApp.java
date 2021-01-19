@@ -3,6 +3,9 @@ package demo;
 import org.noear.solon.Solon;
 import org.noear.solon.socketd.SocketD;
 
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
+
 //启动客户端
 public class ClientApp {
     public static void main(String[] args) throws Throwable {
@@ -17,8 +20,5 @@ public class ClientApp {
             System.out.println("RPC result: " + rpc.hello("noear"));
         }
 
-        if (rpc.auth("1", "2")) {
-            System.out.println("RPC result: " + rpc.hello("noear"));
-        }
     }
 }

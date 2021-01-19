@@ -41,6 +41,8 @@
         <module>demo05.rpcd/demo05.client</module>
         <module>demo05.rpcd/demo05.interface</module>
         <module>demo05.rpcd/demo05.server</module>
+
+        <module>demo10.websocket</module>
     </modules>
 
 </project>
