@@ -1,6 +1,5 @@
 package demo;
 
-import org.noear.solon.annotation.Component;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.annotation.Remoting;
 import org.noear.solon.core.handle.MethodType;

@@ -2,6 +2,7 @@ package demo;
 
 import org.noear.solon.annotation.Component;
 import org.noear.solon.annotation.Mapping;
+import org.noear.solon.annotation.Remoting;
 import org.noear.solon.core.handle.Context;
 import org.noear.solon.core.handle.MethodType;
 import org.noear.solon.core.message.Session;
@@ -10,7 +11,7 @@ import java.io.IOException;
 
 //定义远程服务组件
 @Mapping(value = "/demoe/rpc", method = MethodType.SOCKET)
-@Component(remoting = true)
+@Remoting
 public class HelloServiceImpl implements HelloService {
     @Override
     public boolean auth(String sn, String token) {
