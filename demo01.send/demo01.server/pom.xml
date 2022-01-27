@@ -7,7 +7,8 @@
     <parent>
         <groupId>org.noear</groupId>
         <artifactId>solon-parent</artifactId>
-        <version>1.6.12</version>
+        <version>1.6.19</version>
+        <relativePath />
     </parent>
 
     <artifactId>demo01.server</artifactId>
