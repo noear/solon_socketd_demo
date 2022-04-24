@@ -17,7 +17,8 @@ public class ClientApp {
         System.out.println("RPC result: " + rpc.hello("noear"));
 
         //引入：nami.channel.socketd.smartsocket 可用
-        HelloService rpc2 = Nami.builder().upstream(()->"tcp://localhost:28080").create(HelloService.class);
+        //HelloService rpc = Nami.builder().upstream(()->"tcp://localhost:28080").create(HelloService.class);
+        HelloService rpc2 = Nami.builder().url("tcp://localhost:28080/demoe/rpc").create(HelloService.class);
         System.out.println("RPC result2: " + rpc2.hello("noear"));
     }
 }
