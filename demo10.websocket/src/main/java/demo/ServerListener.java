@@ -15,13 +15,14 @@ public class ServerListener implements Listener {
     }
 
     @Override
+    public void onClose(Session session) {
+        System.out.println("有客户端链关了!");
+    }
+
+    @Override
     public void onMessage(Session session, Message message) {
         //收到消息，做业务处理
-        if(message.flag() == MessageFlag.heartbeat){
-            System.out.println("服务端：我收到心跳");
-        }else {
-            System.out.println("服务端：我收到：" + message.bodyAsString());
-        }
+        System.out.println("服务端：我收到：" + message.bodyAsString());
 
         for(Session s1 : session.getOpenSessions()){
             s1.send("服务端：我收到：" + message.bodyAsString());

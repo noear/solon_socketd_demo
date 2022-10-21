@@ -9,6 +9,7 @@
     <version>demo</version>
     <packaging>pom</packaging>
 
+    <name>_root</name>
     <description>Java project for socketd demo</description>
 
     <modules>
